@@ -2,10 +2,5 @@
 <p class="copyright">
   <span>Martin Chapman Fromm &copy; {{ site.time | date: '%Y' }}</span>
 
-  {% if strapi.collections.links.size > 0 %}
-  {% for link in strapi.collections.links %}
-    <span>{{ link.name }}: <a href="{{ link.address }}">{{ link.text }}</a></span>
-  {% endfor %}
-  {% endif %}
 </p>
 </footer>
