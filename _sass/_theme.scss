@@ -33,52 +33,10 @@ h2 {
     margin-bottom: 40px;
   }
 }
-nav {
-  margin-bottom: 125px;
-  @include mq(narrow) {
-    margin-bottom: 50px;
-  }
-}
-
-.page-link:after {
-  content: ", ";
-}
-.page-link:last-of-type:after {
-  content: ".";
-}
-figure {
-  margin-bottom: 50px;
-  box-sizing: border-box;
-}
-figcaption {
-  font-size: 11px;
-  color: lighten($brandcolor01, 50%);
-  text-transform: uppercase;
-  margin-top: 10px;
-}
-.portrait {
-}
-
-.portrait {
-  float: left;
-  max-width: 50%;
-  padding-right: 25px;
-  padding-left: 0;
-  @include mq(narrow) {
-    float: none;
-    max-width: 100%;
-    padding-right: 0;
-  }
-}
-.portrait + .portrait {
-  padding-left: 25px;
-  padding-right: 0;
-  @include mq(narrow) {
-    padding-left: 0;
-  }
-}
-figure.landscape {
-  float: none;
+abbr {
+  text-decoration: none;
+  border-bottom: 1px solid lighten($brandcolor01,70%);
+  cursor: pointer;
 }
 .site-footer {
   padding: 0 0 50px;
@@ -90,51 +48,7 @@ figure.landscape {
     display: block;
   }
 }
-.copyright span:after {
-  content: "|";
-  color: lighten($brandcolor01, 50%);
-  margin: 0 .25em 0 .5em;
-  @include mq(narrow) {
-    content: none;
-  }
-}
-.copyright span:last-of-type:after {
-  content: none;
-}
+
 .active:link, .active:visited {
   text-decoration: underline;
-}
-
-
-// HOME LAYOUT 2 TEST
-// body { margin: 0; background: #333; }
-.hometest {
-  // padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 50px;
-}
-.hometest figure {
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  width: 300px;
-  margin: .5vw;
-}
-.hometest div img {
-  width: 100%;
-  height: auto;
-  max-height: 100px;
-}
-@media screen and (max-width: 400px) {
-  .hometest figure { margin: 0; }
-  .hometest { padding: 0; }
-
 }
